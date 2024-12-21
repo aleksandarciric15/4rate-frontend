@@ -1,50 +1,50 @@
-# React + TypeScript + Vite
+# 4Rate - Frontend Application
+The 4Rate system is a platform intended for displaying information about restaurants, enabling geust feedback, sharing reviews in the form of ratings and text reviews, user interaction, and restaurant reservations.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies](#technologies)
+- [Contributing](#contributing)
 
-Currently, two official plugins are available:
+## Features
+- User registration and authentication
+- Real-time reservations and availability management
+- Ratings and reviews system for geusts
+- System for receiving notifications in real-time
+- Admin panel for managing user accounts, resturants, reservations, ...
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+1. Clone the repository:
+   ``` bash
+   git clone https://github.com/aleksandarciri15/4rate-frontend.git
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+2. Navigate to the project directory:
+   ```bash
+   cd 4rate-frontend
 
-- Configure the top-level `parserOptions` property like this:
+3. Install dependencies:
+   ```bash
+   npm install
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+4. Start the application:
+   ``` bash
+   npm run dev
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Usage
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Open you browser and navigate to `http://localhost:5173`.
+2. Register or log in to access features.
+3. Use the admin panle to manage users and settings.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+# Technologies
+
+- React
+- Tailwind CSS
+- Shadcn
+
+## Contributing 
+
+Contributions are welcome!
